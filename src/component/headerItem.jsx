@@ -1,9 +1,9 @@
 import React from 'react';
-import { MdPeopleAlt } from 'react-icons/md';
+
 function HeaderItem({ Icon, name,Mid }) {
   return (
     <>
-    <div className="flex  items-center cursor-pointer gap-3 hover:underline ">
+    <div className="flex  items-center cursor-pointer gap-3 hover:underline  ">
       
 
       <Icon className=" text-2xl" />

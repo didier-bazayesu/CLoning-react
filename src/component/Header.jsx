@@ -26,6 +26,7 @@ function Home() {
   ];
 
   return (
+    <>
  <div>
     < div className='bg-black flex justify-between' >
 
@@ -72,9 +73,15 @@ function Home() {
     </div>
 
    
+   
+
+   
 
     </div>
+     <br />
 
+    
+</>
     
   );
 }

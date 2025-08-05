@@ -49,14 +49,21 @@ let allProduction = [
 
 function ProductionHouse() {
   return (
-    <div >
-      {allProduction.map(element=> {
+    <>
+ 
+    <div className='flex flex-row gap-10  mt-10  justify-center border-[2px]
+     border-amber-500 p-5 m-10 rounded-lg'>
+      {allProduction.map(elem => {
 
-        return  <div id={element.id} className='w-full'>
-               <img src={element.image} alt="" />
-           </div>
+      return  <div className='border-[2px] border-gray-600 rounded-lg cursor-pointer hover:transition-all ease-in'>
+          <img src={elem.image} className='w-40 bg-green-50'  />
+          <p className='text-center'>{elem.name}</p>
+        </div>
       })}
     </div>
+    
+    
+    </>
   )
 }
 
