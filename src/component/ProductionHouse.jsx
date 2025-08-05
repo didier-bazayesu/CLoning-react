@@ -1,35 +1,46 @@
 import React from 'react'
  import { useState } from 'react'
 import logs from '../assets/icons8-disney.png'
+import marvel from '../assets/marve.png'
+import national from '../assets/nationalgeographical.png'
+import pixar from '../assets/pixar.png'
+import starwar from '../assets/starwar.png'
+import { all } from 'axios'
+
 
 
 
 
 let allProduction = [
 
-  {name : 'Marvel studio ',
+  {name : 'Disney image ',
+    id: 1,
     video : '',
     image : logs
   },
     {
-        name: 'Marvel studio ',
+        name: 'Pixar ',
         video: '',
-        image: logs
+        id:2,
+        image: pixar
     },
     {
         name: 'Marvel studio ',
         video: '',
-        image: logs
+        id:3,
+        image: marvel
     },
     {
-        name: 'Marvel studio ',
+        name: 'Star war ',
         video: '',
-        image: logs
+        id:4,
+        image:starwar 
     },
     {
-        name: 'Marvel studio ',
+        name: 'National geographical ',
         video: '',
-        image: logs
+        id: 5,
+        image: national
     }
 
 
@@ -38,7 +49,14 @@ let allProduction = [
 
 function ProductionHouse() {
   return (
-    <div>ProductionHouse</div>
+    <div >
+      {allProduction.map(element=> {
+
+        return  <div id={element.id} className='w-full'>
+               <img src={element.image} alt="" />
+           </div>
+      })}
+    </div>
   )
 }
 
