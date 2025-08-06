@@ -55,10 +55,15 @@ function ProductionHouse() {
      border-amber-500 p-5 m-10 rounded-lg'>
       {allProduction.map(elem => {
 
-      return  <div className='border-[2px] border-gray-600 rounded-lg cursor-pointer hover:transition-all ease-in'>
-          <img src={elem.image} className='w-40 bg-green-50'  />
-          <p className='text-center'>{elem.name}</p>
-        </div>
+      return  <div className='border-[2px] border-gray-600 rounded-lg cursor-pointer
+                    hover:transition-all ease-in  transition-transform hover:scale-90'>
+                  <div>
+                    <img src={elem.image} className='w-40 bg-green-50 transition-all duration-300 ' />
+                    <p className='text-center'>{elem.name}</p>
+
+                  </div>
+
+              </div>
       })}
     </div>
     
