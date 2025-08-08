@@ -28,7 +28,7 @@ function Home() {
   return (
     <>
  <div>
-    < div className='bg-black flex justify-between' >
+    < div className='bg-black flex justify-between steak top-0' >
 
         <div  className='flex gap-3'> 
 

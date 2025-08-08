@@ -8,9 +8,9 @@ import axios from "axios";
 let fecthGlobalApi = axios.get('https://api.themoviedb.org/3/movie/popular?api_key=9f6ca43fbf8d637bb2bce548e541542d')
 
 
-
+const baseUrl = "https://image.tmdb.org/t/p/original"
 
 
 export default  {
-    fecthGlobalApi
+    fecthGlobalApi,baseUrl
 }

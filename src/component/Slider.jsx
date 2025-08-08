@@ -49,15 +49,19 @@ import {  HiChevronLeft, HiChevronRight } from "react-icons/hi2";
         <HiChevronLeft className='hidden md:block text-white text-[50px]  mt-[170px] ml-4 absolute'
          onClick={()=>sliderLeft(elementRef.current)}/>
 
-        <div className='flex overflow-x-auto w-full px-16 py-4   
-         scroll-smooth scrollbar-none class'  ref={elementRef} >
+        <div className='flex overflow-x-auto
+           w-full px-16 py-4   
+         scroll-smooth scrollbar-none class' 
+          ref={elementRef} >
 
             {movieList.map((elem,index)=> { 
             return(
             
                <>
-               <img  src={baseUrl + elem.backdrop_path} alt="" className='w-auto md:min-w-full  md:h-[400px] object-cover
-               object-left-top m-5 rounded-md  hover:border-6 hover:border-white  hover:transition-all  ease-in'/>
+               <img  src={baseUrl + elem.backdrop_path} 
+               alt="" className='w-auto md:min-w-full  md:h-[400px] object-cover
+               object-left-top m-5 rounded-md  hover:border-6 hover:border-white 
+                hover:transition-all  ease-in'/>
                     {/* <p>{elem.original_title}</p> */}
                
                </>
@@ -69,8 +73,12 @@ import {  HiChevronLeft, HiChevronRight } from "react-icons/hi2";
             })}
         </div>
 
-          <HiChevronRight className='hidden md:block text-white text-[50px] 
-           mt-[170px] ml-4 absolute right-0 ' onClick={() => sliderRight(elementRef.current)}/>
+          <HiChevronRight 
+          className='hidden md:block text-white
+           text-[50px] 
+           mt-[170px] ml-4 absolute right-0 '
+            onClick={() =>
+             sliderRight(elementRef.current)}/>
 
     </div>
            
