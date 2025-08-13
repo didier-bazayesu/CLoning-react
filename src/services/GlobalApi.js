@@ -10,6 +10,8 @@ let fecthGlobalApi = axios.get('https://api.themoviedb.org/3/movie/popular?api_k
 
 const baseUrl = "https://image.tmdb.org/t/p/original"
 
+const getMovieByGenId = axios.get(baseUrl + '&with_genres='+id)
+
 
 export default  {
     fecthGlobalApi
