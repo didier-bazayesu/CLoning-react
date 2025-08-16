@@ -3,18 +3,15 @@ import MovieList from '../MovieList'
 
 function GeneralList() {
 
+let store = [
+  { id: 28, name: "Action" },
+  { id: 12, name: "Adventure" },
+  { id: 16, name: "Animation" },
+  { id: 35, name: "Comedy" },
+  { id: 10749, name: "Romance" },
+  { id: 10402, name: "Music" }
+];
 
-  let store = [
-
-{id: 1 , name : 'Action' },
-{id:2 ,name : 'Adventure'},
-{id:3 , name :'Animation'},
-{id:4 , name : 'Codmedy'},
-{id:5 , name : 'Romancy '},
-{id: 34, name :"Music"}
-
-
-  ]
   return (
     <div className=''>
      {store.map((element,index) => 

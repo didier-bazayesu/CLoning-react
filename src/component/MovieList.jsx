@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react"
 import GlobalApi from "../services/GlobalApi"
+import MovieCard from "./MovieCard"
 
 
 
@@ -29,7 +30,11 @@ function MovieList({ genreId }){
 
     return(<>
 
-        
+          <div className="flex">
+            {movieList.map((elem,index)=>{
+              return <MovieCard movie= {elem}/>
+            })}
+          </div>
         
       </>)
       }
