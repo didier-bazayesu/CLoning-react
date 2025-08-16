@@ -29,14 +29,12 @@ import {  HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 
     },[])
 
-    const getTrended = () =>{
+   const getTrended = () => {
+     GlobalApi.fetchPopularMovies().then((response) => {
+       setMovieList(response.data.results);
+     });
+   };
 
-        GlobalApi.fecthGlobalApi.then(response => {
-            setMovieList(response.data.results)
-            
-            
-        })
-    }
      
     //  movieList.forEach(movie => {
     //      console.log(movie.

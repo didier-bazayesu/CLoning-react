@@ -1,4 +1,5 @@
 import React from 'react'
+import MovieList from '../MovieList'
 
 function GeneralList() {
 
@@ -15,7 +16,17 @@ function GeneralList() {
 
   ]
   return (
-    <div>GeneralList</div>
+    <div className=''>
+     {store.map((element,index) => 
+
+      index <4&& (<div id={element.id} className='p-8 px-8 md:px-16' >
+           <h2 className='text-white text-[20px] font-bold'> {element.name}</h2>
+           <MovieList genreId = {element.id}/>
+      </div>)
+     )}
+
+   
+    </div>
   )
 }
 

@@ -1,18 +1,17 @@
 import axios from "axios";
 
-// const movieBase = 'https://api.themoviedb.org'
-// const api_key = '9f6ca43fbf8d637bb2bce548e541542d'
+const api_key = "9f6ca43fbf8d637bb2bce548e541542d";
+const movieBase = "https://api.themoviedb.org/3";
 
-    //'https://api.themoviedb.org/3/movie/popular?api_key=9f6ca43fbf8d637bb2bce548e541542d'
+// ✅ fetch popular movies (for Slider)
+const fetchPopularMovies = () =>
+    axios.get(`${movieBase}/movie/popular?api_key=${api_key}`);
 
-let fecthGlobalApi = axios.get('https://api.themoviedb.org/3/movie/popular?api_key=9f6ca43fbf8d637bb2bce548e541542d')
+// ✅ fetch movies by genre (for MovieList)
+const getMovieByGenId = (id) =>
+    axios.get(`${movieBase}/discover/movie?api_key=${api_key}&with_genres=${id}`);
 
-
-const baseUrl = "https://image.tmdb.org/t/p/original"
-
-const getMovieByGenId = axios.get(baseUrl + '&with_genres='+id)
-
-
-export default  {
-    fecthGlobalApi
-}
+export default {
+    fetchPopularMovies,
+    getMovieByGenId,
+};
