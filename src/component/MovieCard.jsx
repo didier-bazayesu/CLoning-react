@@ -6,7 +6,9 @@ function MovieCard({movie}) {
    
      <>
           <img src={ baseUrl + movie.poster_path} alt="" 
-           className='w-[110px] md:w-[200px]'/>
+           className='w-[110px] md:w-[200px] 
+            rounded-lg hover:border-[3px] border-grey-400
+            '/>
      </>
 
     

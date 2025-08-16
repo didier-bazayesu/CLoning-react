@@ -30,9 +30,9 @@ function MovieList({ genreId }){
 
     return(<>
 
-          <div className="flex">
+          <div className="flex gap-8 overflow-x-auto scroll-none">
             {movieList.map((elem,index)=>{
-              return <MovieCard movie= {elem}/>
+              return <MovieCard movie= {elem} />
             })}
           </div>
         
