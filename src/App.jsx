@@ -10,16 +10,16 @@ function App() {
 
 
   return (
-    <>
-   
+    <div className='dard'>
+
       <Home />
-      <Slider/>
-      <ProductionHouse/>
-      <GenMovieList/>
-     
-      
-      
-    </>
+      <Slider />
+      <ProductionHouse />
+      <GenMovieList />
+
+
+
+    </div>
   );
 }
 

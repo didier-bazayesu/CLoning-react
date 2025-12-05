@@ -9,6 +9,9 @@ function MovieList({ genreId }){
     let[movieList,setMovieList] = useState([])
 
 
+    
+
+
     const Url = "https://image.tmdb.org/t/p/original"
   
 
@@ -29,6 +32,9 @@ function MovieList({ genreId }){
      }
 
     return(<>
+
+
+       <h1>target</h1>
 
           <div className="flex gap-12 overflow-x-auto scroll-auto
            scrollbar-none">
